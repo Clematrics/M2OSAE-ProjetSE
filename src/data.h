@@ -36,7 +36,7 @@
 
 	AUTHOR
 
-	Loïc Gueguen, LESIA.
+	Loï¿½c Gueguen, LESIA.
 
 	DESCRIPTION
 
@@ -46,7 +46,7 @@
 
 	DATE				NAME							DESCRIPTION
 
-     18 janv. 2010		Loïc Gueguen				Initial Version 1.0.0.0
+     18 janv. 2010		Loï¿½c Gueguen				Initial Version 1.0.0.0
 
 ************************************************************************/
 
@@ -59,5 +59,7 @@
  * Array providing sample of simulated datas
  */
 extern unsigned short p_usSrcData[uiSimCount][uiSensorCount][uiSensorSize];
+
+extern unsigned int p_usHotspots[uiSimCount];
 
 #endif /* DATA_H_ */
