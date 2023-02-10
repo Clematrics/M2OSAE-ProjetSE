@@ -1,0 +1,50 @@
+set remotetimeout 10000
+
+# Small hack to evaluate $HOME and $PROJECT paths
+shell echo set logging file $HOME/eclipse-workspace/$PROJECT/Tests_L/gdb_result_001.txt > tmp.txt 
+source tmp.txt
+shell rm tmp.txt
+
+# GDB settings
+set logging overwrite on
+set logging on
+set height 0 
+set print pretty on 
+set print array on
+
+# TSIM coonection
+tar extended-remote localhost:1234
+
+load
+
+# mon = monitor
+# reset the perf indicator
+mon perf reset
+
+hbreak test
+commands
+	silent
+	printf "\n\n**** test = %s ****\n", testName
+	
+	if (testId == 0)
+		mon perf reset
+	end
+	
+	if (testId == 1)
+		mon perf
+		mon perf reset
+	end
+	
+	# if (testId != 2)
+	#	print star1
+	# end
+	
+	cont
+end
+
+start
+# continue past the mandatory breakpoint at 'main'
+cont
+
+mon quit
+detach
