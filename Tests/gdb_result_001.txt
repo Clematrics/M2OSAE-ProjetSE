@@ -1,0 +1,27 @@
+warning: Can not parse XML target description; XML support was disabled at compile time
+0x00000000 in ?? ()
+Loading section .text, size 0xdb8d0 lma 0x40000000
+Loading section .gcc_except_table, size 0x4e9d lma 0x400db8d0
+Loading section .rodata, size 0x86e0 lma 0x400e0770
+Loading section .data, size 0x7a8d0 lma 0x400e8e50
+Start address 0x40000000, load size 1455901
+Transfer rate: 20908 KB/sec, 15825 bytes/write.
+Hardware assisted breakpoint 1 at 0x400028a0: file ..\src\test.cpp, line 11.
+Temporary breakpoint 2 at 0x4000186c: file ..\src\ProjetSE.cpp, line 130.
+[New Thread 2]
+
+Thread 1 hit Temporary breakpoint 2, main () at ..\src\ProjetSE.cpp:130
+130		test("start", 0);
+
+
+**** test = start ****
+
+
+**** test = end ****
+
+Thread 1 received signal SIGTERM, Terminated.
+__text_start () at /opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S:168
+168	/opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S: No such file or directory.
+
+C:\tools\workspace\M2OSAE-ProjetSE\Tests\gdb_batch_001.txt:48: Error in sourced command file:
+Remote communication error.  Target disconnected.: No such file or directory.
