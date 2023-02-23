@@ -1,0 +1,3431 @@
+Proc: batch
+Sort: heap
+Mean: nonnaive
+
+warning: Can not parse XML target description; XML support was disabled at compile time
+0x00000000 in ?? ()
+Loading section .text, size 0xdd700 lma 0x40000000
+Loading section .gcc_except_table, size 0x4e9d lma 0x400dd700
+Loading section .rodata, size 0x8720 lma 0x400e25a0
+Loading section .data, size 0x7a8d0 lma 0x400eacc0
+Start address 0x40000000, load size 1463693
+Transfer rate: 64972 KB/sec, 15909 bytes/write.
+Hardware assisted breakpoint 1 at 0x400041b4: file ../src/test.cpp, line 11.
+Temporary breakpoint 2 at 0x4000188c: file ../src/ProjetSE.cpp, line 150.
+[New Thread 2]
+
+Thread 1 hit Temporary breakpoint 2, main () at ../src/ProjetSE.cpp:150
+150		test("start", 0);
+
+
+**** test = start ****
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303869
+ Instructions :    240151
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.52 MOPS (39.52 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.43 %
+ Simulator performance       :  39.69 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3197227
+ Instructions :   2085388
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.94 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  94.83 %
+ Simulator performance       :  30.93 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373135
+ Instructions :    206701
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.70 MOPS (26.57 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.19 %
+ Simulator performance       :  28.30 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :      5813
+ Instructions :      2485
+ Overall CPI  :      2.34
+ CPU performance (50.0 MHz)  :  21.37 MOPS (20.51 MIPS, 0.86 MFLOPS)
+ Cache hit rate              :   95.4 % (inst: 97.2, data: 89.9)
+ Simulated time              :   0.12 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 108.85 %
+ Simulator performance       :  23.27 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303786
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.91 %
+ Simulator performance       :  39.50 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3156794
+ Instructions :   2061343
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.65 MOPS (32.65 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.14 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.58 %
+ Simulator performance       :  32.51 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    377616
+ Instructions :    209306
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.59 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.55 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.16 %
+ Simulator performance       :  28.31 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67264
+ Instructions :     34970
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  25.99 MOPS (24.21 MIPS, 1.78 MFLOPS)
+ Cache hit rate              :   98.3 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.35 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.83 %
+ Simulator performance       :  26.47 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.32 %
+ Simulator performance       :  39.63 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3134993
+ Instructions :   2046118
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.63 MOPS (32.63 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  62.70 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.70 %
+ Simulator performance       :  32.53 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    371717
+ Instructions :    206443
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.43 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.08 %
+ Simulator performance       :  28.35 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67045
+ Instructions :     34971
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.84 %
+ Simulator performance       :  26.04 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.93 %
+ Simulator performance       :  39.50 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3157458
+ Instructions :   2057077
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.57 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.15 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.68 %
+ Simulator performance       :  32.47 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    369606
+ Instructions :    205275
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.39 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.82 %
+ Simulator performance       :  28.27 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67037
+ Instructions :     34989
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.89 %
+ Simulator performance       :  26.33 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.32 %
+ Simulator performance       :  39.24 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3147300
+ Instructions :   2050684
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  62.95 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.89 %
+ Simulator performance       :  32.54 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372191
+ Instructions :    206493
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.74 MOPS (26.62 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.44 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  85.54 %
+ Simulator performance       :  23.73 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67078
+ Instructions :     35004
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.95 %
+ Simulator performance       :  26.34 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  85.97 %
+ Simulator performance       :  33.98 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3185536
+ Instructions :   2075426
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.71 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  93.56 %
+ Simulator performance       :  30.48 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    369852
+ Instructions :    205309
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.40 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.37 %
+ Simulator performance       :  28.14 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67084
+ Instructions :     34982
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.07 MOPS (24.28 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.10 %
+ Simulator performance       :  26.36 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  87.54 %
+ Simulator performance       :  34.58 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3147719
+ Instructions :   2052433
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.60 MOPS (32.60 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  62.95 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  93.57 %
+ Simulator performance       :  30.51 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373566
+ Instructions :    206995
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.58 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.47 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.35 %
+ Simulator performance       :  28.36 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67100
+ Instructions :     34976
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.06 MOPS (24.27 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.4)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.57 %
+ Simulator performance       :  25.95 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  96.75 %
+ Simulator performance       :  38.24 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3147079
+ Instructions :   2052592
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  62.94 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  95.92 %
+ Simulator performance       :  31.28 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372768
+ Instructions :    206585
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.59 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.17 %
+ Simulator performance       :  28.31 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67069
+ Instructions :     34987
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.34 %
+ Simulator performance       :  25.39 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  85.13 %
+ Simulator performance       :  33.65 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3176455
+ Instructions :   2070457
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.59 MOPS (32.59 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.53 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  92.73 %
+ Simulator performance       :  30.22 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372970
+ Instructions :    207142
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.83 %
+ Simulator performance       :  28.00 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67034
+ Instructions :     34986
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.48 %
+ Simulator performance       :  26.48 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  93.51 %
+ Simulator performance       :  36.95 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3161090
+ Instructions :   2061288
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.60 MOPS (32.60 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.22 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  85.86 %
+ Simulator performance       :  27.99 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370508
+ Instructions :    205768
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.41 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.83 %
+ Simulator performance       :  28.56 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67014
+ Instructions :     34978
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.62 %
+ Simulator performance       :  26.26 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.23 %
+ Simulator performance       :  39.62 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3156012
+ Instructions :   2059007
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.12 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.31 %
+ Simulator performance       :  32.72 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    374970
+ Instructions :    208127
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.63 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.50 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.62 %
+ Simulator performance       :  28.20 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67014
+ Instructions :     34986
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.55 %
+ Simulator performance       :  26.51 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.27 %
+ Simulator performance       :  39.62 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3185594
+ Instructions :   2077867
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.71 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.79 %
+ Simulator performance       :  32.55 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373033
+ Instructions :    207024
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.63 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.45 %
+ Simulator performance       :  28.43 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67075
+ Instructions :     34991
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.33 %
+ Simulator performance       :  26.43 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.26 %
+ Simulator performance       :  39.63 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3160705
+ Instructions :   2061895
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.21 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.33 %
+ Simulator performance       :  32.73 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372155
+ Instructions :    206572
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.44 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.34 %
+ Simulator performance       :  28.40 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67047
+ Instructions :     34981
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.50 %
+ Simulator performance       :  26.48 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.40 %
+ Simulator performance       :  39.27 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3149098
+ Instructions :   2051720
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  62.98 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  94.52 %
+ Simulator performance       :  30.79 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370763
+ Instructions :    205952
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.66 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.42 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.70 %
+ Simulator performance       :  28.52 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67078
+ Instructions :     34990
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  91.20 %
+ Simulator performance       :  23.79 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  77.52 %
+ Simulator performance       :  30.64 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3162890
+ Instructions :   2065497
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.65 MOPS (32.65 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.26 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  95.22 %
+ Simulator performance       :  31.09 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370213
+ Instructions :    205511
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.40 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.87 %
+ Simulator performance       :  28.55 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67075
+ Instructions :     34977
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.07 MOPS (24.28 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.52 %
+ Simulator performance       :  25.95 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303915
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.52 MOPS (39.52 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.97 %
+ Simulator performance       :  39.50 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3193133
+ Instructions :   2083667
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.63 MOPS (32.63 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.86 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.50 %
+ Simulator performance       :  32.79 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    371305
+ Instructions :    206124
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.43 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.83 %
+ Simulator performance       :  28.54 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67050
+ Instructions :     34974
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.44 %
+ Simulator performance       :  26.19 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303883
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.52 MOPS (39.52 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.27 %
+ Simulator performance       :  39.63 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3156830
+ Instructions :   2059362
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.14 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.25 %
+ Simulator performance       :  32.70 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    375048
+ Instructions :    207730
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.69 MOPS (26.56 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.50 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.91 %
+ Simulator performance       :  28.50 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     66990
+ Instructions :     34978
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.11 MOPS (24.32 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.03 %
+ Simulator performance       :  26.38 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.88 %
+ Simulator performance       :  39.48 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3169376
+ Instructions :   2063993
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.56 MOPS (32.56 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.39 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.95 %
+ Simulator performance       :  32.54 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372573
+ Instructions :    206817
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.51 %
+ Simulator performance       :  28.45 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67066
+ Instructions :     34988
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.32 %
+ Simulator performance       :  26.17 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.66 %
+ Simulator performance       :  39.38 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3174728
+ Instructions :   2070507
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.49 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.15 %
+ Simulator performance       :  32.66 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373819
+ Instructions :    207689
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.78 MOPS (26.67 MIPS, 1.11 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.48 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.46 %
+ Simulator performance       :  28.46 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67048
+ Instructions :     34996
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.52 %
+ Simulator performance       :  26.50 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.56 %
+ Simulator performance       :  39.75 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3157161
+ Instructions :   2059385
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.14 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.72 %
+ Simulator performance       :  32.52 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    375011
+ Instructions :    207805
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.58 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.50 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.60 %
+ Simulator performance       :  28.43 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67148
+ Instructions :     35006
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.07 MOPS (24.28 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.91 %
+ Simulator performance       :  26.04 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.43 %
+ Simulator performance       :  39.28 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3165774
+ Instructions :   2062880
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.32 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.98 %
+ Simulator performance       :  32.58 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    376183
+ Instructions :    208742
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.74 MOPS (26.62 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.52 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.88 %
+ Simulator performance       :  27.43 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67051
+ Instructions :     34989
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.46 %
+ Simulator performance       :  26.21 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.18 %
+ Simulator performance       :  39.60 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3165169
+ Instructions :   2064599
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.30 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.05 %
+ Simulator performance       :  31.65 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    371903
+ Instructions :    206263
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.73 MOPS (26.61 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.44 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.58 %
+ Simulator performance       :  28.45 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67003
+ Instructions :     34981
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  95.38 %
+ Simulator performance       :  24.90 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  66.40 %
+ Simulator performance       :  26.24 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3164160
+ Instructions :   2061455
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.28 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  94.13 %
+ Simulator performance       :  30.66 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    375100
+ Instructions :    207922
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.72 MOPS (26.59 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.50 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  58.20 %
+ Simulator performance       :  16.13 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67074
+ Instructions :     34988
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  65.49 %
+ Simulator performance       :  17.08 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  60.43 %
+ Simulator performance       :  23.88 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3143035
+ Instructions :   2045485
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.54 MOPS (32.54 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  62.86 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.12 %
+ Simulator performance       :  31.60 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    375625
+ Instructions :    208297
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.73 MOPS (26.60 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.51 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.30 %
+ Simulator performance       :  28.36 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67064
+ Instructions :     35000
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.07 %
+ Simulator performance       :  26.37 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.10 %
+ Simulator performance       :  39.56 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3183440
+ Instructions :   2074255
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.67 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.32 %
+ Simulator performance       :  32.68 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    369971
+ Instructions :    205440
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.40 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  74.59 %
+ Simulator performance       :  20.71 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67033
+ Instructions :     34981
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  76.61 %
+ Simulator performance       :  19.99 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  91.13 %
+ Simulator performance       :  36.01 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3164863
+ Instructions :   2064897
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.30 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  94.43 %
+ Simulator performance       :  30.81 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373121
+ Instructions :    207248
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.66 MIPS, 1.11 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.76 %
+ Simulator performance       :  28.54 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67079
+ Instructions :     34999
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.02 %
+ Simulator performance       :  26.35 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.98 %
+ Simulator performance       :  39.12 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3172468
+ Instructions :   2069018
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.20 %
+ Simulator performance       :  32.67 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    371121
+ Instructions :    206111
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.42 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.27 %
+ Simulator performance       :  28.40 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67049
+ Instructions :     34995
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.91 %
+ Simulator performance       :  26.60 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.09 %
+ Simulator performance       :  39.15 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3154726
+ Instructions :   2058047
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.09 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  93.08 %
+ Simulator performance       :  30.36 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370110
+ Instructions :    205451
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.40 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  92.58 %
+ Simulator performance       :  25.70 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67014
+ Instructions :     35006
+ Overall CPI  :      1.91
+ CPU performance (50.0 MHz)  :  26.12 MOPS (24.33 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  79.73 %
+ Simulator performance       :  20.82 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  73.57 %
+ Simulator performance       :  29.08 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3180298
+ Instructions :   2076868
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.65 MOPS (32.65 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.61 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  95.24 %
+ Simulator performance       :  31.10 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373200
+ Instructions :    207307
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.66 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.90 %
+ Simulator performance       :  28.30 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67040
+ Instructions :     34986
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.81 %
+ Simulator performance       :  26.56 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.54 %
+ Simulator performance       :  39.33 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3157044
+ Instructions :   2057133
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.14 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  91.39 %
+ Simulator performance       :  29.78 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    378135
+ Instructions :    209356
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.68 MOPS (26.55 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.56 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.49 %
+ Simulator performance       :  28.37 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67059
+ Instructions :     34977
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.07 %
+ Simulator performance       :  26.62 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.15 %
+ Simulator performance       :  39.19 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3159078
+ Instructions :   2057819
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.57 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.18 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.65 %
+ Simulator performance       :  31.81 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372584
+ Instructions :    206466
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.58 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.84 %
+ Simulator performance       :  28.22 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67056
+ Instructions :     34980
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  90.30 %
+ Simulator performance       :  23.55 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.44 %
+ Simulator performance       :  38.50 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3159702
+ Instructions :   2057518
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.56 MOPS (32.56 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.19 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  92.29 %
+ Simulator performance       :  30.05 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373202
+ Instructions :    206917
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.72 MOPS (26.60 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.46 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.67 %
+ Simulator performance       :  28.46 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67079
+ Instructions :     34981
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.07 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.24 %
+ Simulator performance       :  26.40 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.68 %
+ Simulator performance       :  39.01 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3168404
+ Instructions :   2063732
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.57 MOPS (32.57 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.37 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.26 %
+ Simulator performance       :  32.00 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372694
+ Instructions :    207164
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.79 MOPS (26.68 MIPS, 1.11 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.55 %
+ Simulator performance       :  28.22 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67061
+ Instructions :     34985
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.00 %
+ Simulator performance       :  26.34 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  88.50 %
+ Simulator performance       :  34.98 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3155070
+ Instructions :   2057557
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.61 MOPS (32.61 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.10 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  95.69 %
+ Simulator performance       :  31.20 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    374499
+ Instructions :    207427
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.69 MOPS (26.57 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.49 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.81 %
+ Simulator performance       :  28.47 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67044
+ Instructions :     34992
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.81 %
+ Simulator performance       :  26.31 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.87 %
+ Simulator performance       :  39.46 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3162791
+ Instructions :   2061520
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.59 MOPS (32.59 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.26 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.63 %
+ Simulator performance       :  31.82 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370817
+ Instructions :    205653
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.73 MOPS (26.61 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.42 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.67 %
+ Simulator performance       :  28.47 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67058
+ Instructions :     34986
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.54 %
+ Simulator performance       :  26.23 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.25 %
+ Simulator performance       :  38.83 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3151005
+ Instructions :   2057042
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.64 MOPS (32.64 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.02 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.81 %
+ Simulator performance       :  31.93 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    373568
+ Instructions :    207012
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.58 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.47 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.31 %
+ Simulator performance       :  28.35 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67064
+ Instructions :     34984
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.46 %
+ Simulator performance       :  26.46 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.87 %
+ Simulator performance       :  39.85 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3163180
+ Instructions :   2062207
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.60 MOPS (32.60 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.26 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.75 %
+ Simulator performance       :  31.86 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372741
+ Instructions :    207009
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.77 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.47 %
+ Simulator performance       :  28.45 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67026
+ Instructions :     34984
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.71 %
+ Simulator performance       :  26.28 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  96.84 %
+ Simulator performance       :  38.28 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3164893
+ Instructions :   2064882
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.30 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.04 %
+ Simulator performance       :  31.98 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372039
+ Instructions :    206492
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.63 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.44 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.53 %
+ Simulator performance       :  28.45 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67028
+ Instructions :     34988
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.95 %
+ Simulator performance       :  26.35 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.91 %
+ Simulator performance       :  39.08 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3166902
+ Instructions :   2066054
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.9)
+ Simulated time              :  63.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.32 %
+ Simulator performance       :  32.07 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370813
+ Instructions :    205816
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.63 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.42 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.96 %
+ Simulator performance       :  28.30 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67083
+ Instructions :     34967
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.06 MOPS (24.27 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.65 %
+ Simulator performance       :  26.49 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.18 %
+ Simulator performance       :  38.81 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3175841
+ Instructions :   2075368
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.67 MOPS (32.67 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.3, data: 98.8)
+ Simulated time              :  63.52 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.90 %
+ Simulator performance       :  31.99 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    374429
+ Instructions :    207382
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.69 MOPS (26.56 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.49 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.35 %
+ Simulator performance       :  28.34 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67021
+ Instructions :     34983
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.10 MOPS (24.31 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.18 %
+ Simulator performance       :  26.15 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.94 %
+ Simulator performance       :  38.70 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3155967
+ Instructions :   2057967
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.60 MOPS (32.60 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.12 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  94.28 %
+ Simulator performance       :  30.74 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    374055
+ Instructions :    207204
+ Overall CPI  :      1.81
+ CPU performance (50.0 MHz)  :  27.70 MOPS (26.57 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.48 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.82 %
+ Simulator performance       :  28.48 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67105
+ Instructions :     34997
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.44 %
+ Simulator performance       :  26.45 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.66 %
+ Simulator performance       :  39.00 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3164593
+ Instructions :   2065294
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.63 MOPS (32.63 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.29 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.20 %
+ Simulator performance       :  32.37 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372401
+ Instructions :    206940
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.78 MOPS (26.67 MIPS, 1.11 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.04 %
+ Simulator performance       :  28.35 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67009
+ Instructions :     34999
+ Overall CPI  :      1.91
+ CPU performance (50.0 MHz)  :  26.12 MOPS (24.32 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.7)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.61 %
+ Simulator performance       :  26.54 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.26 %
+ Simulator performance       :  39.23 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3144694
+ Instructions :   2047313
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.55 MOPS (32.55 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  62.89 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.04 %
+ Simulator performance       :  32.56 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    368986
+ Instructions :    204862
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.38 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.40 %
+ Simulator performance       :  28.43 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67025
+ Instructions :     34997
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.11 MOPS (24.32 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.16 %
+ Simulator performance       :  26.41 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.11 %
+ Simulator performance       :  39.16 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3166939
+ Instructions :   2067522
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.64 MOPS (32.64 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.46 %
+ Simulator performance       :  32.14 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    374066
+ Instructions :    207556
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.74 MOPS (26.62 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.48 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  97.67 %
+ Simulator performance       :  27.10 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67031
+ Instructions :     34975
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  96.80 %
+ Simulator performance       :  25.25 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  93.59 %
+ Simulator performance       :  36.99 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3177088
+ Instructions :   2073911
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.64 MOPS (32.64 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.54 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  78.89 %
+ Simulator performance       :  25.75 MIPS
+ Used time (sys + user)      :   0.08 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    371087
+ Instructions :    205947
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.75 MOPS (26.63 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.42 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.97 %
+ Simulator performance       :  28.02 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67047
+ Instructions :     34981
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.43 %
+ Simulator performance       :  26.46 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.42 %
+ Simulator performance       :  39.28 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3150495
+ Instructions :   2055297
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.62 MOPS (32.62 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.01 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.81 %
+ Simulator performance       :  32.56 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372451
+ Instructions :    206572
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.73 MOPS (26.61 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.20 %
+ Simulator performance       :  28.34 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67070
+ Instructions :     34994
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.17 %
+ Simulator performance       :  26.39 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.57 %
+ Simulator performance       :  39.36 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3184385
+ Instructions :   2078312
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.63 MOPS (32.63 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.69 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.14 %
+ Simulator performance       :  32.68 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    370501
+ Instructions :    205709
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.64 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.41 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.51 %
+ Simulator performance       :  28.46 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67049
+ Instructions :     34979
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.51 %
+ Simulator performance       :  26.48 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303963
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.51 MOPS (39.51 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  59.62 %
+ Simulator performance       :  23.56 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3177961
+ Instructions :   2070544
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.58 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.56 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  96.58 %
+ Simulator performance       :  31.46 MIPS
+ Used time (sys + user)      :   0.07 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372691
+ Instructions :    206663
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.73 MOPS (26.60 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.84 %
+ Simulator performance       :  28.51 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67105
+ Instructions :     34989
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.07 MOPS (24.28 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.5)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.30 %
+ Simulator performance       :  26.41 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303835
+ Instructions :    240188
+ Overall CPI  :      1.26
+ CPU performance (50.0 MHz)  :  39.53 MOPS (39.53 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.6)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.67 %
+ Simulator performance       :  39.39 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3163861
+ Instructions :   2060018
+ Overall CPI  :      1.54
+ CPU performance (50.0 MHz)  :  32.56 MOPS (32.55 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.7)
+ Simulated time              :  63.28 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.23 %
+ Simulator performance       :  31.98 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372657
+ Instructions :    206492
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.71 MOPS (26.58 MIPS, 1.13 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.1)
+ Simulated time              :   7.45 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 102.94 %
+ Simulator performance       :  28.52 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67049
+ Instructions :     34983
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.09 MOPS (24.30 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.14 %
+ Simulator performance       :  26.39 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = pixel rearrangment ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    303915
+ Instructions :    240188
+ Overall CPI  :      1.27
+ CPU performance (50.0 MHz)  :  39.52 MOPS (39.52 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 100.0, data: 93.5)
+ Simulated time              :   6.08 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  99.43 %
+ Simulator performance       :  39.29 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = median computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :   3171338
+ Instructions :   2066813
+ Overall CPI  :      1.53
+ CPU performance (50.0 MHz)  :  32.59 MOPS (32.58 MIPS, 0.00 MFLOPS)
+ Cache hit rate              :   99.1 % (inst: 99.2, data: 98.8)
+ Simulated time              :  63.43 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       :  98.40 %
+ Simulator performance       :  32.07 MIPS
+ Used time (sys + user)      :   0.06 s
+
+
+
+**** test = mean computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :    372199
+ Instructions :    206675
+ Overall CPI  :      1.80
+ CPU performance (50.0 MHz)  :  27.76 MOPS (26.65 MIPS, 1.12 MFLOPS)
+ Cache hit rate              :   99.2 % (inst: 99.9, data: 96.2)
+ Simulated time              :   7.44 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 101.85 %
+ Simulator performance       :  28.28 MIPS
+ Used time (sys + user)      :   0.01 s
+
+
+
+**** test = Vref / hotspots computation ****
+Merged performance statistics for all started CPUs:
+ Cycles       :     67056
+ Instructions :     34982
+ Overall CPI  :      1.92
+ CPU performance (50.0 MHz)  :  26.08 MOPS (24.29 MIPS, 1.79 MFLOPS)
+ Cache hit rate              :   98.4 % (inst: 99.9, data: 92.6)
+ Simulated time              :   1.34 ms
+ Processor utilisation       : 100.00 %
+
+Performance of the simulator:
+ Real-time performance       : 100.99 %
+ Simulator performance       :  26.34 MIPS
+ Used time (sys + user)      :   0.00 s
+
+
+
+**** test = end ****
+
+Thread 1 received signal SIGTERM, Terminated.
+__text_start () at /opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S:168
+168	/opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S: No such file or directory.
+
+/home/clement/eclipse-workspace/ProjetSE/Tests_L/gdb_batch_001.txt:50: Error in sourced command file:
+Remote connection closed

@@ -12,7 +12,7 @@ set height 0
 set print pretty on 
 set print array on
 
-# TSIM coonection
+# TSIM connection
 tar extended-remote localhost:1234
 
 load
