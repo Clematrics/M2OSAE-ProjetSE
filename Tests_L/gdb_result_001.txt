@@ -1,26 +1,20 @@
 warning: Can not parse XML target description; XML support was disabled at compile time
-test (testName=0x400da3e8 "start", testId=0) at ../src/test.cpp:11
-11		return testCounter++;
-Loading section .text, size 0xd5540 lma 0x40000000
-Loading section .gcc_except_table, size 0x4e9d lma 0x400d5540
-Loading section .rodata, size 0x8610 lma 0x400da3e0
-Loading section .data, size 0x6e8 lma 0x400e29f0
-Start address 0x40000000, load size 930005
-Transfer rate: 100912 KB/sec, 15500 bytes/write.
-Hardware assisted breakpoint 1 at 0x40001380: file ../src/test.cpp, line 11.
-Temporary breakpoint 2 at 0x40001270: file ../src/ProjetSE.cpp, line 15.
+0x00000000 in ?? ()
+Loading section .text, size 0xda920 lma 0x40000000
+Loading section .gcc_except_table, size 0x4e9d lma 0x400da920
+Loading section .rodata, size 0x8670 lma 0x400df7c0
+Loading section .data, size 0x7a8d0 lma 0x400e7e30
+Start address 0x40000000, load size 1451773
+Transfer rate: 67511 KB/sec, 15780 bytes/write.
+Hardware assisted breakpoint 1 at 0x40001a74
+Temporary breakpoint 2 at 0x400015bc
 [New Thread 2]
 
-Thread 1 hit Temporary breakpoint 2, main () at ../src/ProjetSE.cpp:15
-15		test("start", 0);
-
-
-**** test = start ****
-
-
-**** test = end ****
+Thread 1 hit Temporary breakpoint 2, 0x400015bc in main ()
 
 Thread 1 received signal SIGTERM, Terminated.
 __text_start () at /opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S:168
 168	/opt/bcc-2.2.0-gcc/src/libbcc/shared/trap/trap_table_mvt.S: No such file or directory.
 
+/home/clement/eclipse-workspace/ProjetSE/Tests_L/gdb_batch_001.txt:50: Error in sourced command file:
+Remote connection closed

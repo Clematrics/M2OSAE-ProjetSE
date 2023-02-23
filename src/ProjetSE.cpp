@@ -13,19 +13,19 @@
 #include <numeric>
 using namespace std;
 
+// #define SAMPLEDATA
+// #define PROFILE
+
 #ifdef TEST
 #define assertm(expected, msg) assert(((void)msg, expected));
 #else
 #define assertm(expected, msg)
 #endif
 
-#define SAMPLEDATA
-#define PROFILE
-
 #include "const.h"
-#include "data.h"
+// #include "data.h"
 #include "SortEngine.h"
-#include "test.hpp"
+// #include "test.hpp"
 
 float Vref[uiSensorSize] = { 0 };
 
@@ -204,31 +204,32 @@ void body(size_t iteration) {
 	#endif
 }
 
-#include <time.h>
-#include <stdlib.h>
+// #include <time.h>
+// #include <stdlib.h>
 
 int main() {
-	sortEngine.setSortType(SortEngine::HEAP);
+	sortEngine.setSortType(SortEngine::QUICK);
 
-	srand(13412324);
-	unsigned short arr[uiSensorCount] = {0};
-	for (size_t i = 0, v = uiSensorCount; i < uiSensorCount; i++, v--)
-		arr[i] = rand() % 10000;
+	// srand(13412324);
+	// unsigned short arr[uiSensorCount] = {0};
+	// for (size_t i = 0, v = uiSensorCount; i < uiSensorCount; i++, v--)
+	// 	arr[i] = rand() % 10000;
 
 	#ifdef PROFILE
 	test("start", 0);
 	#endif
 
-	sortEngine.sort(arr, uiSensorCount);
-	test("iteration", 1);
+	// sortEngine.sort(arr, uiSensorCount);
+	// test("iteration", 1);
 
 	// First iteration is special: computes the reference vector
 	for (size_t iteration = 0; iteration < uiSimCount; iteration++) {
+		__asm__ volatile("" : "+g" (iteration) : :);
 		// body_batch(iteration);
-		// body(iteration);
-		// #ifdef PROFILE
-		// test("iteration", 1);
-		// #endif
+		body(iteration);
+		#ifdef PROFILE
+		test("iteration", 1);
+		#endif
 	}
 
 	#ifdef TEST
