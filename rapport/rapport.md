@@ -54,6 +54,8 @@ L'algorithme retenu est donc le *quicksort*.
 
 Samples, d'abord chaque fonction spécifique isolée puis l'ensemble d'une acquisition.
 
+2cart avec prévisions.
+
 ### Performances et charge CPU
 
 Mesures de performances effectuées sur TSIM avec les samples fournies et des données aléatoires.
@@ -80,6 +82,8 @@ Consommation mémoire:
 | Vecteur des moyennes |  |  |
 | Vecteur traité |  |  |
 | Autres variables |  |  |
+
+Taille de l'exécutable.
 
 ## Architecture
 
