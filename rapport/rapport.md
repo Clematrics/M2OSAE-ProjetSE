@@ -89,7 +89,13 @@ Taille de l'exécutable.
 
 ### Overview/Synoptique
 
-Choix du processeur
+L'architecture retenue est basée sur deux bus CAN redondants, chacun connectés à 25 des 50 capteurs. Le bus CAN a été sélectionné de part sa faible consommation électrique et faible encombrement par rapport à une architecture SpaceWire, ainsi qu'une plus grande maturité par rapport à des bus I2C et SPI. La nécessité de deux bus CAN eux même dédoublés pour redondance 
+Chaque capteur embarque un ADC 16 bis à sortie série, interfacant avec un transmetteur convertissant le signal série selon le protocole CAN. 
+
+Choix du processeur :
+
+Pour assurer une redondance des liens SpaceWire, il est nécessaire de disposer de quatre liens RMAP entre le FPGA interfacant avec les bus CAN et le DPU. Pour celà il est nécessaire de disposer d'un routeur SpaceWire.
+Le processeur GR740 intègre directement un routeur, et à une faible consimmation nominale comarée aux génération précedentes d'architecture LEON. Ce processuer disposant de 4 coeurs, il est serait possible de réaliser des traitements en parallèle, ou d'assure une redondance des processus.
 
 ### Mémoires et justification
 
@@ -99,10 +105,18 @@ Pour le stockage à court terme des données transférées par SpaceWire/RMAP et
 Les deux mémoires sont utilisées simulatanément en miroir, avec un multiplexage dans les FPGA utilisant le RMAP via le SpaceWire
 
 Stockage de masse : Pour le stockage des données on prévoit  deux NAND FLASH redondantes en mirroir contenant chacune l'intégralité des données pour redondance, avec option d'utilisation séquentielle en cas de problèmes de communication avec le sol. Ayant 8,64GB de données générées par jour, on suppose une fréquence de descente des données de une fois par jour, on doit donc stocker au minimum cette quantité de données dans la mémoire. Pour conserver des marges on choisis deux modules de 16GB chacun (128 Gb). On trouve un composant qualifié spatial adapté : 3D-Plus 3DFN128G08US8761
-En cas de problème de télémétrie on peut déparalléliser les deux mémoires et stocker séquentiellement en cas de dépassement des 16 GB disponibles
+En cas de problème de télémétrie on peut déparalléliser les deux mémoires et stocker séquentiellement en cas de dépassement des 16 GB disponibles.
 
-Stockage du code processeur : EEPROM non recommandée pour nouveaux designs par fabriquant -> Remplacée par MRAM qualifiée spatial de 64Mb, qui permets de stocker le code compilé pour le processeur LEON
-
+Concernant le stockage du code exécuté sur le processeur une mémoire MRAM qualifiée spatial de 64Mb à été choisie, en effet les mémoires de type EEPROM n'étaies pas recommandées pour nouveaux designs par fabriquant.
+La capacité de 64Mb permets le stockage du code compilé dans son intégralité.
 ### Budget de puissance
-
+Ce budget de puissance corresponds à une estimation basée sur les données disponibles sur les composants retenus, correspondant à la consomation typique.
+Capteurs : Hamamatsu 512px 1mW/capteur -> 50px -> .20 mW estimation x50 = 10mW 
+	ADC : 100mW x 50 = 5 W
+	CAN tranceiver : 98x17mA + 2x60mA @ 3.3V = 5.89 W
+	SDRAM 2x155mA x 3,3V - max rating :
+	NAND 2x51mA x 3,3V =  - max rating :
+	MRAM max rating : 2x0,6 W
+	GR 740 - <2.0W -> supérieur à GR 712 en perf mais plus efficace (routeur intégré)
+	FPGA ?
 ### Débit descendant vers la plateforme
