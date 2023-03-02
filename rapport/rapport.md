@@ -89,34 +89,36 @@ Taille de l'exécutable.
 
 ### Overview/Synoptique
 
-L'architecture retenue est basée sur deux bus CAN redondants, chacun connectés à 25 des 50 capteurs. Le bus CAN a été sélectionné de part sa faible consommation électrique et faible encombrement par rapport à une architecture SpaceWire, ainsi qu'une plus grande maturité par rapport à des bus I2C et SPI. La nécessité de deux bus CAN eux même dédoublés pour redondance 
-Chaque capteur embarque un ADC 16 bis à sortie série, interfacant avec un transmetteur convertissant le signal série selon le protocole CAN. 
+L'architecture retenue est basée sur deux bus CAN redondants, chacun connectés à 25 des 50 capteurs. Le bus CAN a été sélectionné par sa faible consommation électrique et faible encombrement par rapport à une architecture SpaceWire, ainsi qu'une plus grande maturité par rapport à des bus I2C et SPI. La nécessité de deux bus CAN eux même dédoublés pour redondance 
+Chaque capteur embarque un ADC 16 bis à sortie série, interfaçant avec un transmetteur convertissant le signal série selon le protocole CAN et transmettant à la puissance nécessaire.
+
+Les FPGA retenus pour les interfaces CAN vers SpaceWire sont des RTAX-250SL, qui disposent de suffisamment de capacité pour accueillir un IP-Core SpaceWire (28% d'occupation) et l'interface depuis le bus CAN, tout en assurant une faible consommation électrique.
 
 Choix du processeur :
 
-Pour assurer une redondance des liens SpaceWire, il est nécessaire de disposer de quatre liens RMAP entre le FPGA interfacant avec les bus CAN et le DPU. Pour celà il est nécessaire de disposer d'un routeur SpaceWire.
-Le processeur GR740 intègre directement un routeur, et à une faible consimmation nominale comarée aux génération précedentes d'architecture LEON. Ce processuer disposant de 4 coeurs, il est serait possible de réaliser des traitements en parallèle, ou d'assure une redondance des processus.
+Pour assurer une redondance des liens SpaceWire, il est nécessaire de disposer de quatre liens RMAP entre le FPGA interfaçant avec les bus CAN et le DPU. Pour cela il est nécessaire de disposer d'un routeur SpaceWire.
+Le processeur GR740 intègre directement un routeur, et à une faible consommation nominale comparé aux générations précédentes d'architecture LEON. Ce processeur disposant de 4 cœurs, il serait possible de réaliser des traitements en parallèle, ou d'assure une redondance des processus à chaud en cas de besoin.
 
 ### Mémoires et justification
 
-On utilise différent types de mémoire chacune choisie pour convenir de manière optimale à l'utilisation prévue
+On utilise différent type de mémoire chacune choisie pour convenir de manière optimale à l'utilisation prévue
 
-Pour le stockage à court terme des données transférées par SpaceWire/RMAP et contenant la mémoire de travail du processur Leon, on a choisi deux SDRAM de 512Mb chacune pour avoir une redondance. Cette quantité de stockage permets le stockage des l'intégralité des données des capteurs pendant plusieurs secondes tout en conservant de la capacité pour le fonctionnement de l'algorithme.
-Les deux mémoires sont utilisées simulatanément en miroir, avec un multiplexage dans les FPGA utilisant le RMAP via le SpaceWire
+Pour le stockage à court terme des données transférées par SpaceWire/RMAP et contenant la mémoire de travail du processeur Leon, deux SDRAM de 512Mb chacune ont été choisies pour avoir une redondance. Cette quantité de stockage permets le stockage de l'intégralité des données des capteurs pendant plusieurs secondes tout en conservant de la capacité pour le fonctionnement de l'algorithme.
+Les deux mémoires sont utilisées simultanément en miroir, avec un multiplexage dans les deux FPGA utilisant le RMAP via le SpaceWire
 
-Stockage de masse : Pour le stockage des données on prévoit  deux NAND FLASH redondantes en mirroir contenant chacune l'intégralité des données pour redondance, avec option d'utilisation séquentielle en cas de problèmes de communication avec le sol. Ayant 8,64GB de données générées par jour, on suppose une fréquence de descente des données de une fois par jour, on doit donc stocker au minimum cette quantité de données dans la mémoire. Pour conserver des marges on choisis deux modules de 16GB chacun (128 Gb). On trouve un composant qualifié spatial adapté : 3D-Plus 3DFN128G08US8761
-En cas de problème de télémétrie on peut déparalléliser les deux mémoires et stocker séquentiellement en cas de dépassement des 16 GB disponibles.
+Stockage de masse : Pour le stockage des données deux NAND FLASH sont prévues, organisées en redondance en miroir contenant chacune l'intégralité des données pour redondance, avec option d'utilisation séquentielle en cas de problèmes de communication avec le sol. Ayant 8,64GB de données générées par jour, on suppose une fréquence de descente des données de une fois par jour, on doit donc stocker au minimum cette quantité de données dans la mémoire. Pour conserver des marges deux modules de 16GB chacun (128 Gb) ont été retenus. On trouve un composant qualifié spatial adapté : 3D-Plus 3DFN128G08US8761
+En cas de problème de télémétrie on peut dé-paralléliser les deux mémoires et stocker séquentiellement en cas de dépassement des 16 GB disponibles.
 
-Concernant le stockage du code exécuté sur le processeur une mémoire MRAM qualifiée spatial de 64Mb à été choisie, en effet les mémoires de type EEPROM n'étaies pas recommandées pour nouveaux designs par fabriquant.
-La capacité de 64Mb permets le stockage du code compilé dans son intégralité.
+Concernant le stockage du code exécuté sur le processeur une mémoire MRAM qualifiée spatial de 64Mb a été choisie, en effet les mémoires de type EEPROM n'étais pas recommandées pour nouveaux designs par fabriquant.
+La capacité de 64Mb permet le stockage du code compilé dans son intégralité.
 ### Budget de puissance
 Ce budget de puissance corresponds à une estimation basée sur les données disponibles sur les composants retenus, correspondant à la consomation typique.
-Capteurs : Hamamatsu 512px 1mW/capteur -> 50px -> .20 mW estimation x50 = 10mW 
 	ADC : 100mW x 50 = 5 W
-	CAN tranceiver : 98x17mA + 2x60mA @ 3.3V = 5.89 W
-	SDRAM 2x155mA x 3,3V - max rating :
-	NAND 2x51mA x 3,3V =  - max rating :
-	MRAM max rating : 2x0,6 W
-	GR 740 - <2.0W -> supérieur à GR 712 en perf mais plus efficace (routeur intégré)
-	FPGA ?
+	CAN tranceiver : 50x50uA + 52x17mA + 2x60mA @ 3.3V = 3.314 W
+	SDRAM 2x155mA x 3,3V - max rating : 1.203W
+	NAND 2x51mA x 3,3V =  - max rating : 0.337W
+	MRAM max rating : 2x0,6 W = 1.2W
+	GR 740 - Max 1.5W - 2W si 4 cœurs + SpaceWire -> supérieur à GR 712 en performances mais plus efficace (routeur intégré)
+	FPGA - 2x @Idle +  
+    SpaceWire : 3 x 50 mW = 150mW
 ### Débit descendant vers la plateforme
