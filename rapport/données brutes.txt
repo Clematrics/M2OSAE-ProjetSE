@@ -1,0 +1,6 @@
+
+| Copie des pixels dans le buffer | 67460 | 34747 | 1.35ms | 20 cycles, 0µs |  |
+| Tri des données & calcul de la médiane | 466147 | 317610 | 9.32ms | 1447 cycles, 29µs |  |
+| Calcul des bornes et de la moyenne | 43765 | 25302 | 0.88ms | 190 cycles , 3µs |  |
+| Calcul des hotspots | 37000 | 14254 | 0.74ms | 222 cycles, 4µs |
+| Traitement total | 614372 | 391913 | 12.29ms | 1678 cycles, 34µs |

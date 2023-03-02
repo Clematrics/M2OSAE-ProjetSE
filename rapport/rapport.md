@@ -1,17 +1,21 @@
 # Compte-rendu du projet Systèmes Embarqués
 
+*Hadrien Caumont, Clément Devatine*
+
 ## Logiciel embarqué de traitement
 
 ### Fonctionnement
 
 Chaque groupe de données issues des 50 capteurs est traité simultanément.
 
-Le traitement consiste à considérer les mêmes pixels/lignes de tous les capteurs.
-TODO: schéma
-Les données sont copiées dans un buffer stockant une ligne de chaque capteur, pour être traitées ensemble.
+Le traitement (effectué dans la fonction `batch`) consiste à considérer les mêmes pixels/lignes de tous les capteurs, et de faire tous les calculs sur une seule ligne, avant de continuer sur la suivante. Les données sont donc copiées dans un buffer (en rouge) stockant un pixel de chaque capteur.
 
-Ce buffer est alors trié en place en utilisant le moteur de tri fourni.
-La médiane est ensuite calculée avec la formule
+![Réarrangement des données](rearrangment.svg)
+
+> Une approche a été testée où toutes les données sont traitées d'un seul coup, pour exploiter la vectorisation des opérations. Cependant, les performances étaiet moins bonnes que la solution actuelle. Cela est dû au fait que toute la matrice des données doit être transposée avant d'effectuer les opérations, nécessitant un plus grand espace mémoire et défavorisant les *cache-hit*.
+
+Le buffer est alors trié en place en utilisant le moteur de tri fourni.
+La médiane est alors calculée avec la formule
 $$
 M =
     \begin{cases}
@@ -21,12 +25,13 @@ M =
 $$
 
 Les données étant triées, calculer la moyenne avec réjection des valeurs aberrations devient facile.
-En effet, la réjection consiste à éliminer les valeurs qui sont trop écartées de la médiane. Les éléments qui sont à sommer sont donc consécutifs dans le tableau, et il suffit donc de déterminer les bornes de ces éléments avant de les sommer, plutôt que de parcourir tout le tableau et vérifier si la condition est remplie sur chaque élément.
+En effet, la réjection consiste à éliminer les valeurs qui sont trop écartées de la médiane. Les éléments qui sont à sommer sont consécutifs dans le tableau, et il suffit donc de déterminer les bornes de ces éléments avant de les sommer, plutôt que de parcourir tout le tableau et vérifier si la condition est remplie sur chaque élément.
 Pour déterminer les bornes, nous passont par une dichotomie de chaque côté. Nous avons pu déterminer que cela faisait gagner quelques millisecondes comparé à un parcours complet du tableau, malgré un parcours non linéaire des données en mémoire. Cela s'explique par le fait que le cache peut tenir suffisamment bien les données d'une ligne (50 pixels) pour faire disparaître les latences.
-TODO: schéma
+![Exemple de calcul de médiane](sort.svg)
 
 Naturellement, il y a quelques situations qui pourraient retourner des données erronnées, notamment lorsque la réjection exclut toutes les données du tableau, donnant une division par zéro dans le calcul de la moyenne. Cela n'est cependant possible que lorsque le tableau est de taille paire avec une tolérance d'erreur inférieure à l'écart entre la médiane et les valeurs utiliées pour calculer cette médiane.
-TODO: schéma
+![Exemple de cas dégénéré](bad_median.svg)
+Nous avons fait le choix d'ignorer cette erreur cependant (trop spcifique), autre qu'en mettant une assertion au cas où lors des tests. Il faudra décider comment traiter cette erreur lors de futurs développements.
 
 La moyenne est ensuite stockée dans un vecteur moyenne, ou dans le vecteur de référence, statique, s'il s'agit de la première itération. La vérification de si le pixel est considéré comme un point chaud est déterminé dans la foulée.
 
@@ -44,48 +49,52 @@ La mesure du temps donnait, sur 50 données, en moyenne, sur les données des sa
 - environ 0.10ms pour le *quicksort*
 - environ 0.09ms pour l'algorithme de tri de la biblio standard (sachant que c'est du *quicksort* principalement sous le capot)
 
-Etant donné que l'algorithme standard ne permet pas d'avoir beaucoup de contrôle sur le code sous-jacent et ne propose qu'un gain anecdotique, celui-ci est éliminé des candidats.
+Étant donné que l'algorithme standard ne permet pas d'avoir beaucoup de contrôle sur le code sous-jacent et ne propose qu'un gain anecdotique, celui-ci a été éliminé des candidats.
 Les deux algorithmes restants ont une complexité moyenne en $\mathcal{O}(n\log n)$. Cependant, la complexité dans le pire cas est $\mathcal{O}(n^2)$ pour le *quicksort*, alors qu'elle reste en $\mathcal{O}(n\log n)$ pour le *heapsort*.
-Cependant, des tests sur les cas difficiles et aléatoires ont montrés que le *quicksort* restait proche des 0.10ms et le *heapsort* autour des 0.20ms. Cela s'explique par le faible nombre de données à trier et le passage rapide au tri par insertion sur les appels profonds du *quicksort* qui l'empêche de perdre trop de temps.
+Cependant, des tests sur les cas usuellement difficiles ainsi que des données aléatoires ont montrés que le *quicksort* restait proche des 0.10ms et le *heapsort* autour des 0.20ms. Cela s'explique par le faible nombre de données à trier et le passage rapide au tri par insertion sur les appels profonds du *quicksort* qui l'empêche de perdre trop de temps. Plus de tests sont cependant nécessaires, car il est difficile de déterminer quels sont les cas problématiques pour le *quicksort* étant donné que son code est peu lisible.
 
-L'algorithme retenu est donc le *quicksort*.
+L'algorithme retenu est donc le *quicksort* : il s'agit du plus rapide, tout en restant robuste aux données testées.
 
 ### Tests du programme de traitement
 
-Samples, d'abord chaque fonction spécifique isolée puis l'ensemble d'une acquisition.
+Les tests ont été effectués successivement en rajoutant les différents étapes du traitement au fur et à mesure, puis en prenant la différence avec le test précédent.
+Pour éviter les optimisations du compilateur (notamment les boucles lors de la copie du buffer ou entre les *samples*, une ligne d'assembleur injectant une dépendance avec le compteur de boucle : `__asm__ volatile("" : "+g" (iteration) : :);`).
 
-2cart avec prévisions.
+Cette méthode de test a aussi permis de contourner les restrictions de TSIM, qui n'autorise que 1000 appels à ces commandes (donc au plus 500 mesures avec le *profiler*) dans la version gratuite.
+
+Quelques analyses statistiques ont aussi été effectuées pour déterminer si certains traitement étaient instables en terme de temps (notamment le tri et le calcul de la médiane).
+
+Il est intéressant de noter que pendant les tests, les résultats obtenus du nombre de hotspot et le nombre de hotspot donné dans les données de test ne coïncident pas dans 2 cas (sur 50, voir le fichire `rapport/resultats.txt`). L'explication trouvée à ce propos est que le nombre de hotspots spécifié dans les données de test génère effectivement le nombre de hotspots souhaité, avant de rajouter du bruit (tel que décrit dans les paramètres du générateur), ce qui a parfois pour effet de noyer certains de ces points chaud, les rendant ainsi indétectables, ou en en générant d'autres.
 
 ### Performances et charge CPU
 
-Mesures de performances effectuées sur TSIM avec les samples fournies et des données aléatoires.
+Les mesures de performances effectuées sur TSIM avec les samples fournies et des données aléatoires.
 
 Mesure des performances:
-| Algorithme | Cycles | Instructions | Temps | Variance | 
-|-|-|-|-|
-| Copie des pixels dans le buffer | 67460 | 34747 | 1.35ms | 20cycles, 0µs |
-| Tri des données | 469774 |  |  | 1474cycles,  |
-| Calcul de la médiane |  |  |  |  |
-| Calcul des bornes |  |  |  |  |
-| Calcul de la moyenne |  |  |  |  |
-| Calcul des hotspots |  |  |  |  |
-| Traitement total |  |  |  |  |
-Charge CPU finale:
+| Algorithme | Cycles | Instructions | Temps | Variance | Commentaire |
+|-|-|-|-|-|-|
+| Copie des pixels dans le buffer | 67460 | 34747 | 1.35ms | 20 cycles, 0µs |  |
+| Tri des données & calcul de la médiane | 466147 | 352357 | 10.67ms | 1467 cycles, 29µs |  |
+| Calcul des bornes et de la moyenne | 577372 | 377659 | 11.55ms | 1456 cycles , 30µs |  |
+| Calcul des hotspots | 614372 | 391913 | 12.29ms | 1678 cycles, 34µs |
 
+La charge CPU finale est donc d'environ 13% sur un seul cœur.
 On peut noter que sur le traitement total des données, le tri représente 9ms sur 13ms, soit environ 70% de l'occupation CPU par le programme.
 
 Consommation mémoire:
-| Variable | Type et taille | Mémoire consommée |
+| Variable | Taille et type | Mémoire consommée |
 |-|-|-|
-| Vecteur de référence |  |  |
-| Buffer des pixels |  |  |
-| Vecteur des moyennes |  |  |
-| Vecteur traité |  |  |
-| Autres variables |  |  |
+| Vecteur de référence | uiSensorSize * float | 1600 bits |
+| Buffer des pixels | uiSensorSize * unsigned short | 800 bits |
+| Vecteur traité | uiSensorSize * float | 1600 bits |
+| Total + marge (alignement, stack, ...) | - | 4000 bits * 1.5 |
 
-Taille de l'exécutable.
+Nous avons aussi essayé de déterminer la taille de l'exécutable pour donner une borne sur le dimensionnement de la mémoire MRAM.
+Malheureusement, même en désactivant les options de débogage, l'exécutable ne change pas de taille et reste autour de 10Mo. Une analyze plus détaillée des sections de l'ELF montre que les symboles de débogage sont conservés dans le code de l'exécutable, ce qui rend l'évaluation exacte difficile. On peut cependant estimer que la taille n'excède pas 1.5Mo, soit 12Mbits.
 
 ## Architecture
+
+![Architecture proposée](arch.png)
 
 ### Overview/Synoptique
 
