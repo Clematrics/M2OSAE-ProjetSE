@@ -53,7 +53,7 @@ La mesure du temps donnait, sur 50 données, en moyenne, sur les données des sa
 Les deux algorithmes restants ont une complexité moyenne en $\mathcal{O}(n\log n)$. Cependant, la complexité dans le pire cas est $\mathcal{O}(n^2)$ pour le *quicksort*, alors qu'elle reste en $\mathcal{O}(n\log n)$ pour le *heapsort*.
 Cependant, des tests sur les cas usuellement difficiles ainsi que des données aléatoires ont montrés que le *quicksort* restait proche des 0.10ms et le *heapsort* autour des 0.20ms. Cela s'explique par le faible nombre de données à trier et le passage rapide au tri par insertion sur les appels profonds du *quicksort* qui l'empêche de perdre trop de temps. Plus de tests sont cependant nécessaires, car il est difficile de déterminer quels sont les cas problématiques pour le *quicksort* étant donné que son code est peu lisible.
 
-L'algorithme retenu est donc le *quicksort*.
+L'algorithme retenu est donc le *quicksort* : il s'agit du plus rapide, tout en restant robuste aux données testées.
 
 ### Tests du programme de traitement
 
