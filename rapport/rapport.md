@@ -64,7 +64,7 @@ Cette méthode de test a aussi permis de contourner les restrictions de TSIM, qu
 
 Quelques analyses statistiques ont aussi été effectuées pour déterminer si certains traitement étaient instables en terme de temps (notamment le tri et le calcul de la médiane).
 
-Il est intéressant de noter que pendant les tests, les résultats obtenus du nombre de hotspot et le nombre de hotspot donné dans les données de test ne coïncident pas dans 2 cas (sur 50). L'explication trouvée à ce propos est que le nombre de hotspots spécifié dans les données de test génère effectivement le nombre de hotspots souhaité, avant de rajouter du bruit (tel que décrit dans les paramètres du générateur), ce qui a parfois pour effet de noyer certains de ces points chaud, les rendant ainsi indétectables, ou en en générant d'autres.
+Il est intéressant de noter que pendant les tests, les résultats obtenus du nombre de hotspot et le nombre de hotspot donné dans les données de test ne coïncident pas dans 2 cas (sur 50, voir le fichire `rapport/resultats.txt`). L'explication trouvée à ce propos est que le nombre de hotspots spécifié dans les données de test génère effectivement le nombre de hotspots souhaité, avant de rajouter du bruit (tel que décrit dans les paramètres du générateur), ce qui a parfois pour effet de noyer certains de ces points chaud, les rendant ainsi indétectables, ou en en générant d'autres.
 
 ### Performances et charge CPU
 
@@ -93,6 +93,8 @@ Nous avons aussi essayé de déterminer la taille de l'exécutable pour donner u
 Malheureusement, même en désactivant les options de débogage, l'exécutable ne change pas de taille et reste autour de 10Mo. Une analyze plus détaillée des sections de l'ELF montre que les symboles de débogage sont conservés dans le code de l'exécutable, ce qui rend l'évaluation exacte difficile. On peut cependant estimer que la taille n'excède pas 1.5Mo, soit 12Mbits.
 
 ## Architecture
+
+![Architecture proposée](arch.png)
 
 ### Overview/Synoptique
 

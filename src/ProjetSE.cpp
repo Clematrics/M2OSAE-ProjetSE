@@ -13,7 +13,8 @@
 #include <numeric>
 using namespace std;
 
-// #define SAMPLEDATA
+#define SAMPLEDATA
+#define TEST
 // #define PROFILE
 
 #ifdef TEST
@@ -94,8 +95,10 @@ void body(size_t iteration) {
 	}
 
 	#ifdef TEST
+	std::cout << "Sample " << iteration << " - Hotspots measured: " << hotspots;
 	if (hotspots != p_usHotspots[iteration])
-		std::cout << "Sample " << iteration << " - Hotspots expected: " << p_usHotspots[iteration] << "; measured: " << hotspots << "\n";
+		std::cout << " - Hotspots expected: " << p_usHotspots[iteration] << "; measured: " << hotspots;
+	std::cout << "\n";
 	#endif
 }
 
