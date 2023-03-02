@@ -127,20 +127,20 @@ Sont ajouté à chaque echantillon de 50*100 pixels un timestamp de 32 bits ains
 Concernant le stockage du code exécuté sur le processeur une mémoire MRAM qualifiée spatial de 64Mb a été choisie, en effet les mémoires de type EEPROM n'étais pas recommandées pour nouveaux designs par fabriquant.
 La capacité de 64Mb permet le stockage du code compilé dans son intégralité.
 ### Budget de puissance
-Ce budget de puissance corresponds à une estimation basée sur les données disponibles sur les composants retenus, correspondant à la consomation typique.
-	CAN tranceiver : 50x50uA + 52x17mA + 2x60mA @ 3.3V = 3.314 W (50 au repos, 52 en écoute du bus, 2 actifs)
-	SDRAM 2x155mA x 3,3V - max rating : 1.203W
-	NAND 2x51mA x 3,3V =  - max rating : 0.337W
-	MRAM max rating : 2x0,6 W = 1.2W
-	GR 740 - Max 1.5W - 2W si 4 cœurs + SpaceWire -> supérieur à GR 712 en performances mais plus efficace (routeur intégré)
-	FPGA - 2x au repos 50mW + 2x 0.5W actif = 1.1 W 
-    SpaceWire : 3 x 50 mW = 150mW
+Ce budget de puissance corresponds à une estimation basée sur les données disponibles sur les composants retenus, correspondant à la consommation typique.
+- CAN tranceiver : 50x50uA + 52x17mA + 2x60mA @ 3.3V = 3.314 W (50 au repos, 52 en écoute du bus, 2 actifs)
+- SDRAM 2x155mA x 3,3V - max rating : 1.203W
+- NAND 2x51mA x 3,3V =  - max rating : 0.337W
+- MRAM max rating : 2x0,6 W = 1.2W
+- GR 740 - Max 1.5W - 2W si 4 cœurs + SpaceWire -> supérieur à GR 712 en performances mais plus efficace (routeur intégré)
+- FPGA - 2x au repos 50mW + 2x 0.5W actif = 1.1 W 
+- SpaceWire : 3 x 50 mW = 150mW (SpaceWire actifs)
 
-    Total = 8.804 W
+Total = 8.804 W
 ### Débit descendant vers la plateforme
 Plusieurs scénarios sont envisageables fournissant plus ou moins de données en fonction du budget alloué à l'instrument.
 Le cas le plus optimiste corresponds à une transmission de l'intégralité des données acquises à une fréquence d'une fois par jour, avec un débit de 69.175 Gb/Jour
-Dans le cas d'un budget de télémétrie moindre, il est possible d'envisager différen schénarios :
-    - La descente des prises de vues respectant certains paramètres en terme de nombre de hotspots, dans la limite du budget maxial alloué.
-    - La descente journalière des valeurs des hotspots de chaque prise de vue, les scientifiques choisissant pour la prochaine fenêtre les échantillons intéressant qui sont descendus. Ce mode de fonctionnement implique un stockage de plus de 128Gb de données et demande donc d'utiliser les deux modules NAND sans redondance
-    - La descente des données compressées pour limiter la bande passante, avec un gain possible d'un facteur 3 sans pertes -> 23.058 Gb/jour, ceci est envisageable en raison de la faible utilisation du CPU par l'algorithme actuellement implémenté.
+Dans le cas d'un budget de télémétrie moindre, il est possible d'envisager différent scénarios :
+- La descente des prises de vues respectant certains paramètres en terme de nombre de hotspots, dans la limite du budget maxial alloué.
+- La descente journalière des valeurs des hotspots de chaque prise de vue, les scientifiques choisissant pour la prochaine fenêtre les échantillons intéressant qui sont descendus. Ce mode de fonctionnement implique un stockage de plus de 128Gb de données et demande donc d'utiliser les deux modules NAND sans redondance
+- La descente des données compressées pour limiter la bande passante, avec un gain possible d'un facteur 3 sans pertes -> 23.058 Gb/jour, ceci est envisageable en raison de la faible utilisation du CPU par l'algorithme actuellement implémenté.
